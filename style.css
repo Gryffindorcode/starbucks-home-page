@@ -106,6 +106,39 @@ section a {
 }
 
 
+/* footer & social  */
+
+.footer-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 30px;
+}
+
+
+.social {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.social img {
+  width: 35px;
+  height: 35px;
+}
+
+.social a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.divider {
+ width: 92%;
+ height: 2px;
+ background-color: #ccc;
+ margin: 40px auto;
+}
+
 /* box  */
 
 .box {
@@ -116,6 +149,40 @@ section a {
   max-width: 700px;
   margin: 0 auto;
 }
+
+.box-text {
+ max-width: 500px;
+ text-align: center;
+ justify-self: center;
+ padding: 20px 0;
+ margin: 0 auto;
+}
+
+
+.box-f .box-text {
+  max-width: 600px;
+}
+
+.box-text .btn {
+  margin-top: 20px;
+}
+
+
+/* gid styles  */
+
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-reversed  :first-child {
+ order: 2;
+}
+
 /* button  */
 
 .btn {
@@ -135,14 +202,21 @@ section a {
  color: #000;
 }
 
-.btn-dark-shape:hover {
-  background-color: rgba(0,98,65,0.7);
+.btn-dark-shape:hover{
+background-color: rgba(0,98,65,0.7);
 }
 
+
 .btn-light-shape {
- border-color: #fff;
- color: #fff;
+  border-color: #fff;
+  color: #fff;
 }
+
+
+.btn-light-shape:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
 
 .btn-dark-space {
   background-color: #000;
@@ -255,6 +329,10 @@ section a {
    max-width: 1440px;
    margin-right: auto;
    margin-left: auto;
+  }
+
+  .divider{
+    max-width: 90%;
   }
 }
 
